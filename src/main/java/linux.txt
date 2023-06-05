@@ -1,0 +1,208 @@
+velmar@velmar:~$ pwd
+/home/velmar
+velmar@velmar:~$ ll
+total 96
+drwxr-x--- 16 velmar velmar 4096 мая 10 20:22 ./
+drwxr-xr-x  4 root   root   4096 мая 10 20:26 ../
+drwxr-xr-x  2 root   root   4096 мая  7 14:18 apjava/
+-rw-------  1 velmar velmar  524 мая 21 11:08 .bash_history
+-rw-r--r--  1 velmar velmar  220 кра 30 18:08 .bash_logout
+-rw-r--r--  1 velmar velmar 3771 кра 30 18:08 .bashrc
+drwx------ 11 velmar velmar 4096 кра 30 18:36 .cache/
+drwx------ 11 velmar velmar 4096 кра 30 18:20 .config/
+drwxr-xr-x  2 velmar velmar 4096 кра 30 18:13 Desktop/
+-rw-r--r--  1 root   root    102 мая 10 20:22 Dockerfile
+drwxr-xr-x  2 velmar velmar 4096 кра 30 18:13 Documents/
+drwxr-xr-x  2 velmar velmar 4096 кра 30 18:13 Downloads/
+drwx------  3 velmar velmar 4096 кра 30 18:13 .local/
+drwxr-xr-x  2 velmar velmar 4096 кра 30 18:13 Music/
+drwxr-xr-x  2 velmar velmar 4096 кра 30 18:13 Pictures/
+-rw-r--r--  1 velmar velmar  807 кра 30 18:08 .profile
+drwxr-xr-x  2 velmar velmar 4096 кра 30 18:13 Public/
+drwx------  4 velmar velmar 4096 мая  6 21:14 snap/
+drwx------  2 velmar velmar 4096 кра 30 18:36 .ssh/
+-rw-r--r--  1 velmar velmar    0 кра 30 18:25 .sudo_as_admin_successful
+drwxr-xr-x  2 velmar velmar 4096 кра 30 18:13 Templates/
+-rw-r--r--  1 root   root     33 кра 30 21:05 test.py
+drwxr-xr-x  2 velmar velmar 4096 кра 30 18:13 Videos/
+-rw-------  1 velmar velmar 2602 кра 30 18:34 y
+-rw-r--r--  1 velmar velmar  567 кра 30 18:34 y.pub
+velmar@velmar:~$ mkdir 1
+velmar@velmar:~$ cd /1
+-bash: cd: /1: No such file or directory
+velmar@velmar:~$ ll
+total 100
+drwxr-x--- 17 velmar velmar 4096 мая 27 15:40 ./
+drwxr-xr-x  4 root   root   4096 мая 10 20:26 ../
+drwxrwxr-x  2 velmar velmar 4096 мая 27 15:40 1/
+drwxr-xr-x  2 root   root   4096 мая  7 14:18 apjava/
+-rw-------  1 velmar velmar  524 мая 21 11:08 .bash_history
+-rw-r--r--  1 velmar velmar  220 кра 30 18:08 .bash_logout
+-rw-r--r--  1 velmar velmar 3771 кра 30 18:08 .bashrc
+drwx------ 11 velmar velmar 4096 кра 30 18:36 .cache/
+drwx------ 11 velmar velmar 4096 кра 30 18:20 .config/
+drwxr-xr-x  2 velmar velmar 4096 кра 30 18:13 Desktop/
+-rw-r--r--  1 root   root    102 мая 10 20:22 Dockerfile
+drwxr-xr-x  2 velmar velmar 4096 кра 30 18:13 Documents/
+drwxr-xr-x  2 velmar velmar 4096 кра 30 18:13 Downloads/
+drwx------  3 velmar velmar 4096 кра 30 18:13 .local/
+drwxr-xr-x  2 velmar velmar 4096 кра 30 18:13 Music/
+drwxr-xr-x  2 velmar velmar 4096 кра 30 18:13 Pictures/
+-rw-r--r--  1 velmar velmar  807 кра 30 18:08 .profile
+drwxr-xr-x  2 velmar velmar 4096 кра 30 18:13 Public/
+drwx------  4 velmar velmar 4096 мая  6 21:14 snap/
+drwx------  2 velmar velmar 4096 кра 30 18:36 .ssh/
+-rw-r--r--  1 velmar velmar    0 кра 30 18:25 .sudo_as_admin_successful
+drwxr-xr-x  2 velmar velmar 4096 кра 30 18:13 Templates/
+-rw-r--r--  1 root   root     33 кра 30 21:05 test.py
+drwxr-xr-x  2 velmar velmar 4096 кра 30 18:13 Videos/
+-rw-------  1 velmar velmar 2602 кра 30 18:34 y
+-rw-r--r--  1 velmar velmar  567 кра 30 18:34 y.pub
+velmar@velmar:~$ cd 1/
+velmar@velmar:~/1$ cat home_animals
+cat: home_animals: No such file or directory
+velmar@velmar:~/1$ cat home_animals >
+-bash: syntax error near unexpected token `newline'
+velmar@velmar:~/1$ cat home_animals
+cat: home_animals: No such file or directory
+velmar@velmar:~/1$ cat home_animals > dog cat hamster
+cat: home_animals: No such file or directory
+cat: cat: No such file or directory
+cat: hamster: No such file or directory
+velmar@velmar:~/1$ cat > home_animals
+cat
+dog
+hamster
+^C
+
+velmar@velmar:~/1$ cat > pack_animals
+horse
+camel
+donkey
+^C
+velmar@velmar:~/1$ cat home_animals pack_animals > animals
+velmar@velmar:~/1$ cat animals
+cat
+dog
+hamster
+рhorse
+camel
+donkey
+velmar@velmar:~/1$ mv animals friends_human
+velmar@velmar:~/1$ ll
+total 20
+drwxrwxr-x  2 velmar velmar 4096 мая 27 15:52 ./
+drwxr-x--- 17 velmar velmar 4096 мая 27 15:40 ../
+-rw-rw-r--  1 velmar velmar    0 мая 27 15:43 dog
+-rw-rw-r--  1 velmar velmar   37 мая 27 15:48 friends_human
+-rw-rw-r--  1 velmar velmar   16 мая 27 15:45 home_animals
+-rw-rw-r--  1 velmar velmar   21 мая 27 15:47 pack_animals
+velmar@velmar:~/1$ mkdir animals
+velmar@velmar:~/1$ mv friends_human ./animals/
+velmar@velmar:~/1$ ll
+total 20
+drwxrwxr-x  3 velmar velmar 4096 мая 27 15:55 ./
+drwxr-x--- 17 velmar velmar 4096 мая 27 15:40 ../
+drwxrwxr-x  2 velmar velmar 4096 мая 27 15:55 animals/
+-rw-rw-r--  1 velmar velmar    0 мая 27 15:43 dog
+-rw-rw-r--  1 velmar velmar   16 мая 27 15:45 home_animals
+-rw-rw-r--  1 velmar velmar   21 мая 27 15:47 pack_animals
+velmar@velmar:~/1$ cd animals/
+velmar@velmar:~/1/animals$ ll
+total 12
+drwxrwxr-x 2 velmar velmar 4096 мая 27 15:55 ./
+drwxrwxr-x 3 velmar velmar 4096 мая 27 15:55 ../
+-rw-rw-r-- 1 velmar velmar   37 мая 27 15:48 friends_human
+
+velmar@velmar:~/1/animals$ sudo apt install mysql
+[sudo] password for velmar:
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package mysql
+
+
+
+velmar@velmar:/etc/apt/sources.list.d$ sudo apt download nginx
+Get:1 http://by.archive.ubuntu.com/ubuntu jammy-updates/main amd64 nginx amd64 1.18.0-6ubuntu14.3 [3.882 B]
+Fetched 3.882 B in 0s (43,4 kB/s)
+N: Ignoring file 'nginx' in directory '/etc/apt/sources.list.d/' as it has no filename extension
+N: Ignoring file 'acl' in directory '/etc/apt/sources.list.d/' as it has no filename extension
+W: Download is performed unsandboxed as root as file '/etc/apt/sources.list.d/nginx_1.18.0-6ubuntu14.3_amd64.deb' couldn't be accessed by user '_apt'. - pkgAcquire::Run (13: Permission denied)
+velmar@velmar:/etc/apt/sources.list.d$ sudo dpkg -i nginx_1.18.0-6ubuntu14.3_amd64.deb
+Selecting previously unselected package nginx.
+(Reading database ... 181378 files and directories currently installed.)
+Preparing to unpack nginx_1.18.0-6ubuntu14.3_amd64.deb ...
+Unpacking nginx (1.18.0-6ubuntu14.3) ...
+dpkg: dependency problems prevent configuration of nginx:
+ nginx depends on nginx-core (<< 1.18.0-6ubuntu14.3.1~) | nginx-full (<< 1.18.0-6ubuntu14.3.1~) | nginx-light (<< 1.18.0-6ubuntu14.3.1~) | nginx-extras (<< 1.18.0-6ubuntu14.3.1~); however:
+  Package nginx-core is not installed.
+  Package nginx-full is not installed.
+  Package nginx-light is not installed.
+  Package nginx-extras is not installed.
+ nginx depends on nginx-core (>= 1.18.0-6ubuntu14.3) | nginx-full (>= 1.18.0-6ubuntu14.3) | nginx-light (>= 1.18.0-6ubuntu14.3) | nginx-extras (>= 1.18.0-6ubuntu14.3); however:
+  Package nginx-core is not installed.
+  Package nginx-full is not installed.
+  Package nginx-light is not installed.
+  Package nginx-extras is not installed.
+dpkg: error processing package nginx (--install):
+ dependency problems - leaving unconfigured
+Errors were encountered while processing:
+ nginx
+
+velmar@velmar:/etc/apt/sources.list.d$ dpkg -l | grep -i nginx
+iU  nginx                                      1.18.0-6ubuntu14.3                      amd64        small, powerful, scalable web/proxy server
+
+velmar@velmar:/etc/apt/sources.list.d$ sudo apt-get purge -y nginx
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libflashrom1 libftdi1-2 libllvm13
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED:
+  nginx*
+0 upgraded, 0 newly installed, 1 to remove and 6 not upgraded.
+1 not fully installed or removed.
+After this operation, 50,2 kB disk space will be freed.
+(Reading database ... 181381 files and directories currently installed.)
+Removing nginx (1.18.0-6ubuntu14.3) ...
+N: Ignoring file 'nginx_1.18.0-6ubuntu14.3_amd64.deb' in directory '/etc/apt/sources.list.d/' as it has an invalid filename extension
+N: Ignoring file 'nginx' in directory '/etc/apt/sources.list.d/' as it has no filename extension
+N: Ignoring file 'acl' in directory '/etc/apt/sources.list.d/' as it has no filename extension
+velmar@velmar:/etc/apt/sources.list.d$ dpkg -l | grep -i nginx
+velmar@velmar:/etc/apt/sources.list.d$
+
+   31  pwd
+   32  ll
+   33  mkdir 1
+   34  cd /1
+   35  ll
+   36  cd 1/
+   37  cat home_animals
+   38  cat home_animals >
+   39  cat home_animals
+   40  cat home_animals > dog cat hamster
+   41  cat > home_animals
+   42  nano home_animals
+   43  cat > pack_animals
+   44  cat home_animals pack_animals > animals
+   45  cat animals
+   46  mv animals friends_human
+   47  ll
+   48  mkdir animals
+   49  mv friends_human ./animals/
+   50  ll
+   51  cd animals/
+   52  ll
+   53  sudo apt install mysql
+   54  deb http://nginx.org/packages/ubuntu jammy nginx
+   55  dub http://nginx.org/packages/ubuntu jammy nginx
+   56  sudo snap install deb
+   57  sudo snap install dub
+   58  sudo apt download nginx
+   59  sudo dpkg -i nginx_1.18.0-6ubuntu14.3_amd64.deb
+   60  dpkg -l | grep -i nginx
+   61  sudo apt-get purge -y nginx
+   62  dpkg -l | grep -i nginx
+   63  history
